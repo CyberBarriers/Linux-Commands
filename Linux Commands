@@ -1,0 +1,87 @@
+#used to query and change the system hostname and related settings.
+kali@kali:~$hostnamectl
+#used to display the amount of free and used memory on the system, with the memory sizes displayed in megabytes (MB).
+kali@kali:~$free -m
+#used to display information about the users currently logged into the system, as well as their current activity.
+kali@kali:~$w
+#used to display the username of the current user
+kali@kali:~$whoami
+#used to clear the contents of the current terminal
+kali@kali:~$clear
+#used to shut down the system immediately.
+kali@kali:~$shutdown now
+#used to gives users a 5-minute warning before the system shuts down.
+kali@kali:~$shutdown -h +5
+#used to restart the system.
+kali@kali:~$reboot
+#used to display the current working directory, which is the directory you are currently in.
+kali@kali:~$pwd
+#used to change the current working directory.
+kali@kali:~$cd
+#used to navigate up one directory level, moving to the parent directory.
+kali@kali:~$cd ..
+# used to navigate up two directory levels, moving to the grandparent directory.
+kali@kali:~$cd ../..
+#used to displays a list of the commands you have previously executed.
+kali@kali:~$history
+#used to list the contents of the current working directory.
+kali@kali:~$ls
+#used to lists all files and directories, including hidden files (files starting with a dot).
+kali@kali:~$ls -a
+#used to displays a long-format list of the files and directories, providing additional information such as permissions, ownership, file size, and modification dates.
+kali@kali:~$ls -l
+#combines the -a and -l options, displaying a long-format list of all files and directories, including hidden ones.
+kali@kali:~$ls -la
+#used to create a new file or update the timestamp of an existing.
+kali@kali:~$touch example.txt
+#used to create a new directory.
+kali@kali:~$mkdir new_folder
+#used to copy files and directories. The -r option (which stands for "recursive") is used to copy directories and their contents. 
+kali@kali:~$cp -r source_folder /destination_folder
+#used to move or rename files and directories.
+kali@kali:~$mv cat6 cat7 cat8 cat3.txt /home
+kali@kali:~$mv oldfilename newfilename
+#used to remove files and directories. The -r option is used to remove directories and their contents recursively, and the -f option is used to force the removal without prompting for confirmation. 
+kali@kali:~$rm -rf folder1 
+#command-line text editor that allows you to create, edit, and save files. 
+kali@kali:~$nano example.txt
+#used to display the contents of a file.
+kali@kali:~$cat example.txt
+#used to search for files and directories based on various criteria. The -name option is used to search for files and directories by their name.
+kali@kali:~$find -name folder1
+#used to search for patterns within files.
+kali@kali:~$grep "search_phrase" file.txt 
+#used to change the access permissions of files and directories. The number "777" represents the permissions being set, which in this case gives full read, write, and execute access to the owner, group, and others.
+kali@kali:~$chmod 777 file.txt
+#The -R option in this chmod command stands for "recursive", which means the permissions change will be applied not only to the specified file or directory, but also to all subdirectories and files contained within.
+kali@kali:~$chmod -R 777 folder1
+#used to create a new user account. The -m option ensures that a home directory is created for the new user.
+kali@kali:~$useradd -m username
+#used to change the password of a user account. Running passwd without any arguments will prompt you to change the password for the current user.
+kali@kali:~$passwd username
+#used to switch to another user account.
+kali@kali:~$su username
+#used to modify a user account. The -a option adds the user to the specified groups, and the -G sudo part adds the user to the "sudo" group, which grants the user elevated privileges to run commands with sudo.
+kali@kali:~$usermod -a -G sudo username
+#used to change a user's default shell. In this case, the -s /bin/bash option sets the user's default shell to Bash, which is a common and powerful shell environment.
+kali@kali:~$chsh -s /bin/bash username
+#used to display information about the current user or a specified user. 
+kali@kali:~$id username
+#used to create compressed archive files.
+kali@kali:~$zip archive.zip file1.txt file2.txt
+#used to extract files from a compressed archive.
+kali@kali:~$unzip archive.zip
+#used to extract files from a compressed archive. The -l option (which stands for "list") will display the contents of the archive without extracting it.
+kali@kali:~$unzip -l archive.zip
+#used to configure and display information about network interfaces. It can be used to view the IP address, subnet mask, and other details of the network interfaces on the system.
+kali@kali:~$ifconfig
+#more modern alternative to ifconfig for managing network interfaces. The ip addr subcommand displays information about the network interfaces, including their IP addresses and other configuration details.
+kali@kali:~$ip addr
+#used to display or set the hostname of the system. Running hostname without any arguments will display the current hostname.
+kali@kali:~$hostname
+#used to display information about network connections and network activity. The options used in this example (-pnltu) will show the list of listening network ports, including the process ID and program name associated with each port.
+kali@kali:~$netstat -pnltu
+#used to display information about running processes. Without any arguments, it will show the processes associated with the current user and terminal session.
+kali@kali:~$ps
+You can watch the video for more details:⬇️
+https://youtu.be/AnbMxKe8-90
